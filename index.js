@@ -10,6 +10,11 @@ app.use(express.urlencoded({ extended: false })); // to handle urlncoded data(fo
 app.use(express.json());
 app.use(cors());
 
+// Routes
+app.use("/employees", require("./routes/employees"))
+app.use("/register", require("./routes/register"))
+app.use("/login", require("./routes/login"))
+
 // Custom middleware logger
 app.use(logger);
 
