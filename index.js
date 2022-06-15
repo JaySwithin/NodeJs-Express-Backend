@@ -6,6 +6,7 @@ const errorHandler = require("./middleware/errorHandler")
 const verifyJWT = require("./middleware/verifyJWT")
 const cookieParser = require("cookie-parser")
 const PORT = process.env.PORT || 8000;
+require("./config/database");
 
 // Middlewares
 app.use(cors());
