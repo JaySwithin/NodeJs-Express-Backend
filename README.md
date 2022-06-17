@@ -25,7 +25,8 @@ This project repository contains files for a NodeJs - Express backend with authe
 
   - Set following environment variables in a .env file in the root directory
     ``` 
-    #MongoDB connection string
+    ACCESS_TOKEN_SECRET = <some string>
+    REFRESH_TOKEN_SECRET = <some string>
     MONGODB_URI = <some string>
 
   - Run ``$ npm run dev`` to start the backend express server on port 8000
